@@ -1,0 +1,21 @@
+model:
+  path: "heart_failure_model/model.pkl"
+  random_state: 42
+  classifier_type: "RandomForestClassifier"
+  n_estimators: 100
+data:
+  path: "data/heart.csv"
+  target_column: "HeartDisease"
+  categorical_columns:
+    - Sex
+    - ChestPainType
+    - RestingECG
+    - ExerciseAngina
+    - ST_Slope
+  numerical_columns:
+    - Age
+    - RestingBP
+    - Cholesterol
+    - FastingBS
+    - MaxHR
+    - Oldpeak
